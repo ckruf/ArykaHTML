@@ -1,0 +1,52 @@
+
+/* 
+===============
+Global Styles
+===============
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.red-border {
+    border: 1px solid red;
+}
+
+/* 
+===============
+Nav styles
+===============
+*/
+
+#nav-toggle {
+    font-size: 1.5rem;
+    background: transparent;
+    border: transparent;
+    color: white;
+}
+
+#nav-center {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+#nav-buttons {
+    display: flex;
+    align-items: center;
+}
+
+/* 
+===============
+Hero styles
+===============
+*/
+
+header {
+    min-height: 100vh;
+    background: linear-gradient(rgba(74, 154, 200, 0.5), rgba(74, 154, 200, 0.5)), url("./hero.png") center/cover no-repeat;
+}
