@@ -7,26 +7,60 @@
     <title>Aryka IN-WEST a.s.</title>
     <link rel="stylesheet" href="./fontawesome-free-6.5.1-web/css/all.min.css" />
     <link rel="stylesheet" href="./styles.css" /> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&family=Space+Grotesk&family=Poppins" />
 
 </head>
 <body>
     <header>
-        <nav class="red-border">
+        <nav>
             <div id="nav-center">
-                <div id="nav-logo">
-                    <img src="./logo.png"/>
+                <div id="nav-logo-container">
+                    <img id="nav-logo" src="./logo.png"/>
                 </div>
                 <div id="nav-buttons">
-                    <button id="nav-phone" class="btn">
+                    <button type="button" id="nav-phone" class="btn">
+                        <i class="fa-solid fa-phone-volume"></i>
                         +420 777 747 953
                     </button>
-                    <button type="button" id="nav-toggle">
+                    <button type="button" id="nav-toggle" class="btn">
                         <i class="fa-solid fa-bars"></i>
                     </button>
                 </div>
             </div>
         </nav>
 
+        <div id="hero-banner">
+            <div class="section-center">
+                <h1 id="main-heading">Your world safe, <br> We make it simple.</h1>
+                <h2>Save Time, Avoid Hassle and Grow your business with Aryka</h2>
+                <button class="btn" id="banner-btn">
+                    Get Started
+                </button>
+            </div>
+        </div>
     </header>
+
+    <section class="section" id="trusted">
+        <div class="section-title">
+            <h1 id="trusted-heading">Trusted by</h1>
+        </div>
+        <div class="section-center" id="all-trusted-logos-container">
+            <div class="single-trusted-logo-container">
+                <img class="trusted-logo" src="./gdpr_logo.png" />
+            </div>
+            <div class="single-trusted-logo-container">
+                <img class="trusted-logo" src="./esf_logo.png" />
+            </div>
+            <div class="single-trusted-logo-container">
+                <img class="trusted-logo" src="./iso_logo.png" />
+            </div>
+            <div class="single-trusted-logo-container">
+                <img class="trusted-logo" src="./c4_logo.png" />
+            </div>
+
+        </div>
+    </section>
+
+    
 </body>
 </html>

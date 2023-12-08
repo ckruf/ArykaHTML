@@ -1,6 +1,52 @@
 
 /* 
 ===============
+Variables
+===============
+*/
+
+:root {
+    /* dark shades of primary color*/
+    --clr-primary-1: hsl(204, 56%, 34%);
+    --clr-primary-2: hsl(204, 56%, 39%);
+    --clr-primary-3: hsl(204, 56%, 44%);
+    --clr-primary-4: hsl(204, 56%, 49%);
+    /* primary/main color */
+    --clr-primary-5: hsl(204, 56%, 54%);
+    /* lighter shades of primary color */
+    --clr-primary-6: hsl(204, 56%, 59%);
+    --clr-primary-7: hsl(204, 56%, 64%);
+    --clr-primary-8: hsl(204, 56%, 69%);
+    --clr-primary-9: hsl(204, 56%, 74%);
+    --clr-primary-10: hsl(204, 56%, 79%);
+    /* primary color with transparency */
+    --clr-primary-transparent: rgba(74, 154, 200, 0.5);
+    /* grey shades */
+    --clr-grey-1: hsl(210, 36%, 96%);
+    --clr-grey-2: hsl(212, 33%, 89%);
+    --clr-grey-3: hsl(210, 31%, 80%);
+    --clr-grey-4: hsl(211, 27%, 70%);
+    --clr-grey-5: hsl(209, 23%, 60%);
+    --clr-grey-6: hsl(210, 22%, 49%);
+    --clr-grey-7: hsl(209, 28%, 39%);
+    --clr-grey-8: hsl(209, 34%, 30%);
+    --clr-grey-9: hsl(211, 39%, 23%);
+    --clr-grey-10: hsl(209, 44%, 15%);
+    /* other variables */
+    --clr-white: #fff;
+    --ff-primary: "Space Grotesk", sans-serif;
+    --ff-btn: "Poppins", "sans-serif";
+    --transition: all 0.3s linear;
+    --radius: 1rem;
+    --phone-font-size: 0.875rem;
+    --desktop-font-size: 1rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+
+/* 
+===============
 Global Styles
 ===============
 */
@@ -11,9 +57,70 @@ Global Styles
     box-sizing: border-box;
 }
 
+body {
+    font-family: var(--ff-primary);
+    font-size: var(--phone-font-size);
+}
+
 .red-border {
     border: 1px solid red;
 }
+
+.yellow-border {
+    border: 1px solid yellow;
+}
+
+.btn {
+    cursor: pointer;
+    border-radius: 2rem;
+    font-family: var(--ff-btn);
+    padding: 0.75rem 2.5rem;
+    border: 2px solid transparent;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    color: var(--clr-white);
+    font-weight: bold;
+    font-size: var(--phone-font-size);
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.25;
+    color: var(--clr-white);
+    margin-bottom: 0.75rem;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+.section {
+    padding: 4rem 0;
+}
+
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.section-title {
+    text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        font-size: var(--desktop-font-size);
+    }
+    .btn {
+        font-size: var(--desktop-font-size);
+    }
+}
+
 
 /* 
 ===============
@@ -21,11 +128,25 @@ Nav styles
 ===============
 */
 
+#nav-logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+#nav-logo {
+    height: 80%;
+}
+
+
+
 #nav-toggle {
     font-size: 1.5rem;
     background: transparent;
     border: transparent;
-    color: white;
+    color: var(--clr-white);
+    margin-right: 2rem;
+    box-shadow: none;
 }
 
 #nav-center {
@@ -40,6 +161,26 @@ Nav styles
     align-items: center;
 }
 
+#nav-phone {
+    background: transparent;
+    border: 1px solid white;
+    font-family: "Plus Jakarta Sans", "sans-serif";
+    color: var(--clr-white);
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-right: 2rem;
+    display: none;
+    padding: 0.5rem 0.5rem;
+    border-radius: var(--radius);
+
+}
+
+@media screen and (min-width: 800px) {
+    #nav-phone {
+        display: inline;
+    }
+}
+
 /* 
 ===============
 Hero styles
@@ -48,5 +189,51 @@ Hero styles
 
 header {
     min-height: 100vh;
-    background: linear-gradient(rgba(74, 154, 200, 0.5), rgba(74, 154, 200, 0.5)), url("./hero.png") center/cover no-repeat;
+    background: linear-gradient(
+        var(--clr-primary-transparent),
+        var(--clr-primary-transparent)
+    ),
+    url("./hero.png")
+    center/cover no-repeat;
+}
+
+#hero-banner {
+    margin-top: 20vh;
+}
+
+#banner-btn {
+    background: #8FA3E9;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+    #main-heading{
+        font-size: 4rem;
+    }
+}
+
+/* 
+===============
+'Trusted' section styles
+===============
+*/
+
+
+#trusted-heading {
+    color: var(--clr-grey-10);
+}
+
+.single-trusted-logo-container {
+    display: flex;
+    justify-content: center;
+    height: 6rem;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+    #all-trusted-logos-container{
+        display: flex;
+        justify-content: space-around;
+    }
 }
