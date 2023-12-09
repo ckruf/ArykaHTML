@@ -1,0 +1,132 @@
+.design-nettavisen bazaar-ad iframe {
+  max-width: none;
+}
+
+.amedia-article.nettavisen-design
+  bazaar-ad.am-bazaar-ad[position='toppbanner'] {
+  max-width: 980px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.amedia-article.nettavisen-design
+  bazaar-ad.am-bazaar-ad[position='toppbanner']
+  + .body-text {
+  padding-top: 30px;
+}
+
+.amedia-article.nettavisen-design .top-sky-container {
+  position: absolute;
+  top: 0;
+  bottom: 50%;
+}
+
+.amedia-article.nettavisen-design
+  .skyscraper-ads-container-left
+  .top-sky-container {
+  right: 0;
+}
+
+.amedia-article.nettavisen-design .skyscraper-ads-container bazaar-ad,
+.amedia-article.nettavisen-design
+  .skyscraper-ads-container
+  bazaar-ad.am-bazaar-ad--labeled {
+  margin-top: 0;
+}
+
+.amedia-article.nettavisen-design .article-skyscraper {
+  position: absolute;
+  top: 20px;
+  left: 100%;
+  margin-left: 20px;
+  bottom: 0;
+}
+
+.amedia-article.nettavisen-design .skyscraper-ads-container {
+  top: 2000px;
+  bottom: 0;
+  right: -200px;
+  position: absolute;
+  width: 20%;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+  left: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .amedia-article.nettavisen-design .article-skyscraper {
+    display: none;
+  }
+}
+
+.amedia-article.nettavisen-design .article-skyscraper-left {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+}
+
+.amedia-article.nettavisen-design .article-skyscraper-left--inner {
+  position: absolute;
+  top: 2000px;
+  bottom: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .amedia-article.nettavisen-design .article-skyscraper-left {
+    display: none;
+  }
+}
+
+.amedia-article.nettavisen-design .article-sticky-sky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .amedia-article.nettavisen-design .skyscraper-ads-container {
+    display: none;
+  }
+}
+
+.article-top bazaar-ad[position='midtbanner'] {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  bazaar-ad[position='toppbanner'] {
+    display: none;
+  }
+  .article-top bazaar-ad[position='midtbanner'] {
+    display: block;
+  }
+}
+
+.am-bazaar-ad--labeled::before {
+  clear: both;
+}
+
+.nettavisen-design.amedia-article.nettavisen-design
+  bazaar-ad.am-bazaar-ad[position='toppbanner']
+  + .body-text {
+  padding-top: 60px;
+}
+
+.nettavisen-design .sky-left {
+  position: relative;
+  height: 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.nettavisen-design.amedia-article.nettavisen-design .article-skyscraper-left {
+  top: -24px;
+  margin-right: 20px;
+}
+
+.nettavisen-design.amedia-article.nettavisen-design
+  .article-skyscraper-left--inner {
+  top: 0;
+}

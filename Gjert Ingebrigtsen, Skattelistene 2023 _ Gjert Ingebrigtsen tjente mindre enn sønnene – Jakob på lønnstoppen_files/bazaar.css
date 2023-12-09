@@ -1,0 +1,859 @@
+bazaar-ad-container {
+    display: block;
+}
+
+bazaar-ad-container[visible="false"] {
+    display: none;
+}
+
+bazaar-ad {
+    display: block;
+    min-height: 1px;
+    min-width: 1px;
+    position: relative;
+}
+
+bazaar-ad-placement {
+    display: block;
+}
+
+.bazaar-parallax-label::before {
+    z-index: 10;
+    position: absolute;
+    top: -15px;
+    content: '';
+    border-top: 5px solid #e7e6e2;
+    width: 100vw;
+}
+
+.bazaar-parallax-label::after {
+    position: relative;
+    top: -20px;
+    left: calc(50% - 45px);
+    font-family: 'Open Sans',sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: #aeaaa6;
+    text-transform: uppercase;
+    display: block;
+    content: 'Annonse';
+    line-height: 15px;
+    background: #fff;
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 2px;
+    letter-spacing: .25em;
+    z-index: 11;
+    line-height: 20px;
+    width: 90px;
+}
+
+.bazaar-parallax-nettavisen-label::before {
+    z-index: 10;
+    position: absolute;
+    top: -15px;
+    content: '';
+    left: calc(50% - 50vw);
+    width: 100vw;
+}
+
+.bazaar-parallax-nettavisen-label::after {
+    position: relative;
+    top: -20px;
+    left: calc(50% - 45px);
+    font-size: 12px;
+    font-family: FaktorTittel, sans-serif;
+    font-weight: 900;
+    color: #000000;
+    text-transform: uppercase;
+    display: block;
+    content: 'Annonse';
+    text-align: center;
+    z-index: 11;
+    line-height: 20px;
+    width: 90px;
+}
+
+.bazaar-parallax-article-label::before {
+    z-index: 10;
+    position: absolute;
+    top: -15px;
+    content: '';
+    left: calc(50% - 50vw);
+    width: 100vw;
+}
+
+.bazaar-parallax-article-label::after {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+    font-size: 12px;
+    font-family: FaktorTittel, sans-serif;
+    font-weight: 900;
+    color: #000000;
+    text-transform: uppercase;
+    display: block;
+    content: 'Annonse';
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    z-index: 11;
+    line-height: 20px;
+}
+
+.bazaar-parallax-article-label::before {
+    z-index: 10;
+    position: absolute;
+    top: -15px;
+    content: '';
+    left: calc(50% - 50vw);
+    width: 100vw;
+}
+
+.bazaar-parallax-article-label::after {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+    font-size: 12px;
+    font-family: FaktorTittel, sans-serif;
+    font-weight: 900;
+    color: #000000;
+    text-transform: uppercase;
+    display: block;
+    content: 'Annonse';
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    z-index: 11;
+    line-height: 20px;
+}
+
+.bazaar-parallaxtop {
+    margin-left: calc(50% - 50vw) !important;
+    height: 100vh;
+}
+
+.bazaar-parallaxbottom::after {
+    position: absolute;
+    content: '';
+    background-color: white;
+    height: 150vh;
+    top: 100vh;
+    display: block;
+    z-index: 2;
+    margin-left: calc(50% - 50vw);
+    left: 0;
+    visibility: visible;
+    width: 100vw;
+    margin-top: -15px;
+}
+
+
+.bazaar-parallaxtop::before {
+    content: '';
+    background-color: white;
+    width: 100vw !important;
+    top: -150vh;
+    z-index: 2;
+    position: relative;
+    display: block;
+    height: 150vh;
+    visibility: visible;
+}
+
+.bazaar-parallaxtop.hidden::before, .bazaar-parallaxbottom.hidden::after {
+    visibility: hidden;
+}
+
+/* Add all relative positioning in bazaar, so that we only will have to remove it from one place */
+/* remove this when parallax is fixed */
+/* NOT DO THIS FOR IE - FOR SOME REASON IT DOES NOT WORK THERE */
+
+@supports not (-ms-high-contrast: none) {
+    /* Non-IE styles here */
+    amedia-frontpage tivoli-jobcarousel,
+    amedia-frontpage tivoli-realestatecarousel,
+    amedia-frontpage tivoli-servicebar {
+        z-index: 9999;
+        position: relative;
+        }
+    amedia-frontpage amedia-include[rendered=true] {
+        position:relative;
+        z-index: 9999;
+    }
+
+    optimus-element {
+        z-index: 999;
+        /* Denne ødelegger for Maddingtons template. Dette burde heller blitt gjort i parallax js-template? */
+        /* position: relative; */
+    }
+    optimus-element.parallax-relative {
+        position: relative;
+    }
+}
+/* stop removing */
+
+.bazaar-adPlaceholder {
+    background: #fb0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    line-height: .8;
+}
+
+.bazaar-adPlaceholder-info {
+    padding: 10px;
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.bazaar-adPlaceholder-info.bazaar-active {
+    background-color: #c2d9ff;
+}
+
+.bazaar-adPlaceholder-info.bazaar-inactive {
+    background-color: #e7e7e7;
+}
+
+.bazaar-adPlaceholder-info ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    height: 100%;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    overflow-x: auto;
+}
+
+.bazaar-adPlaceholder-info li {
+    margin-right: 20px;
+}
+
+@media screen and (max-device-width: 1024px) {
+    #skyscraper-ads-container {
+        display: none;
+    }
+}
+
+.am-ad-Fullscreen {
+    width: 100vw !important;
+    z-index: 90 !important;
+    margin-left: -10px;
+}
+
+.am-ad-Fullscreen .am-adContainer--labeled:before {
+    z-index: 92;
+}
+
+.am-ad-Fullscreen bazaar-ad {
+    height: 100vh;
+    width: 100vw;
+}
+
+.am-ad-Fullscreen bazaar-ad:before {
+    content: " ";
+    background-color: white;
+    width: 100%;
+    height: 150vh;
+    z-index: 91;
+    position: relative;
+    top: -150vh;
+    display: block;
+}
+
+.am-ad-Fullscreen bazaar-ad:after {
+    content: " ";
+    background-color: white;
+    width: 100%;
+    height: 150vh;
+    z-index: 91;
+    position: relative;
+    top: -50vh;
+    display: block;
+}
+
+.am-ad-Fullscreen bazaar-ad-placement {
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: inherit;
+    z-index: 90;
+    will-change: transform, display;
+    display: none;
+}
+
+.am-ad-Fullscreen--active bazaar-ad-placement {
+    display: block;
+}
+
+.am-ad-Fullscreen .bazaar-debug {
+    width: 100vw !important;
+    height: 100vh !important;
+}
+
+.am-ad-Fullscreen--disabled {
+    display: none;
+}
+
+/* Version 2 */
+
+.bazaar-grid {
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.bazaar-grid>bazaar-ad {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+bazaar-ad.am-bazaar-ad.frozen {
+    margin-bottom: 0px !important;
+}
+
+
+.am-bazaar-ad:not([position="outstreamvideo"]):not([position="chatbox"]):not([position="takeover"]):not(.takeover-close) div,
+.am-bazaar-ad--labeled:not([position="outstreamvideo"]) div {
+    width: inherit !important;
+    height: inherit !important;
+}
+
+.bazaar-grid.full .am-bazaar-ad {
+    flex-basis: 100%;
+}
+
+.bazaar-grid.half .am-bazaar-ad {
+    flex-basis: 50%;
+}
+
+.bazaar-grid.g60-40 .am-bazaar-ad:nth-child(2n+1),
+.bazaar-grid.g40-60 .am-bazaar-ad:nth-child(2n+0) {
+    flex-basis: 60%;
+}
+
+.bazaar-grid.g60-40 .am-bazaar-ad:nth-child(2n+0),
+.bazaar-grid.g40-60 .am-bazaar-ad:nth-child(2n+1) {
+    flex-basis: 40%;
+}
+
+@media screen and (max-width: 980px) {
+    .bazaar-grid.half .am-bazaar-ad,
+    .bazaar-grid.g60-40 .am-bazaar-ad:nth-child(n),
+    .bazaar-grid.g40-60 .am-bazaar-ad:nth-child(n) {
+        flex-basis: 100%;
+    }
+    .bazaar-grid>bazaar-ad {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+.am-bazaar-ad {
+    display: block;
+    position: relative;
+}
+
+/* Labeling */
+
+.am-bazaar-ad--labeled {
+    margin-top: 20px;
+    position: relative;
+}
+
+.design-nettavisen .am-bazaar-ad--labeled {
+    margin-top: 0;
+}
+
+.am-bazaar-ad--labeled:before {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    right: 0;
+    color: #aeaaa6;
+    content: '';
+    border-top: 5px solid #e7e6e2;
+}
+
+.am-bazaar-ad--labeled:after {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: #aeaaa6;
+    text-transform: uppercase;
+    display: block;
+    content: 'Annonse';
+    line-height: 15px;
+    background: var(--page-color, #ffffff);
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    letter-spacing: 0.25em;
+}
+
+.design-nettavisen .am-bazaar-ad--labeled::after {
+    display: none
+}
+
+.design-nettavisen .am-bazaar-ad--labeled::before {
+    position: static;
+    content: 'annonse';
+    border-top: 0 none;
+    text-transform: uppercase;
+    color: var(--brick-colors-baseFg, #000);
+    font-size: 15px;
+    font-family: FaktorSans, sans-serif;
+    font-weight: 900;
+    padding: 0 2px;
+    line-height: 30px;
+    height: 30px;
+    display: block;
+}
+
+.design-nettavisen .horseshoe .am-bazaar-ad--labeled::before {
+    position: absolute;
+    top: -30px;
+}
+
+.design-nettavisen .wallpaper .am-bazaar-ad--labeled::before {
+    position: absolute;
+    top: -30px;
+    text-align: center;
+}
+
+.design-nettavisen .am-bazaar-ad--nolabel::after {
+    content: none;
+}
+
+.design-nettavisen .am-bazaar-ad--nolabel::before {
+    content: none;
+}
+
+.am-bazaar-ad--nolabel:before {
+    content: none;
+}
+
+.am-bazaar-ad--nolabel:after {
+    content: none;
+}
+
+.album-fullscreen>.bazaar-wallpaper {
+    display: none;
+}
+
+.am-bazaar-ad--smartclip-label-override {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    overflow: visible !important;
+}
+
+.am-bazaar-ad--outstreamvideo {
+    min-height: 0;
+}
+
+.am-bazaar-ad--noad {
+    background-color: #FFFFE0;
+    font-family: Open Sans;
+}
+
+challenge-ad[position="challengefooter"] iframe {
+    width: 100%;
+    margin-bottom: 0px !important;
+    height: 50px;
+    position: fixed;
+    z-index: 10000 !important;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+challenge-ad[position="challengedeck"] {
+    padding-top: 15px;
+}
+
+bazaar-ad[position="challengefooter"] iframe {
+    width: 100%;
+    margin-bottom: 0px !important;
+    height: 50px;
+    position: fixed;
+    z-index: 10000 !important;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+bazaar-ad[position="challengedeck"] {
+    padding-top: 15px;
+}
+
+bazaar-ad[position="midtbanner"] {
+    min-height: 330px;
+}
+
+bazaar-ad[position="toppbanner"] {
+    min-height: 300px;
+}
+
+bazaar-ad[position="netboard"] {
+    min-height: 500px;
+}
+
+bazaar-ad[position="cm1"] {
+    min-height: 300px;
+}
+
+bazaar-ad[position="cm2"] {
+    min-height: 300px;
+}
+
+bazaar-ad[position="shadow"] {
+    display: none;
+}
+
+bazaar-ad[position="shadow"] {
+   margin-bottom: 0px !important;
+}
+
+bazaar-ad div.ast {
+  text-align:center;
+}
+
+#bazaar-debug-overlay {
+    animation: float 5s infinite;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    font-family: Roboto, sans-serif;
+    margin-left: 50px;
+    position: fixed;
+    top: 100px;
+    text-align: center;
+    z-index: 999999;
+}
+
+@media (max-width: 600px) {
+    #bazaar-debug-overlay {
+        margin-left: 0px;
+        top: 20px;
+    }
+    #bazaar-debug-overlay th {
+        font-size:10px !important;
+        padding: 5px !important;
+    }
+    #bazaar-debug-overlay tr {
+        font-size: 10px !important;
+    }
+    #bazaar-debug-overlay td {
+        padding: 0px !important;
+    }
+    .design-nettavisen .am-bazaar-ad--labeled::before {
+        padding: 0 15px;
+    }
+    
+}
+
+#bazaar-debug-overlay th {
+    color: #D5DDE5;
+    cursor: pointer;
+    background: #1b1e24;
+    padding: 15px;
+}
+
+#bazaar-debug-overlay tr {
+    color: #666B85;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+#bazaar-debug-overlay tr:hover td {
+    background: #4E5066;
+    color: #FFFFFF;
+    border-top: 1px solid #22262e;
+}
+
+#bazaar-debug-overlay tr:nth-child(odd):hover td {
+    background: #4E5066;
+}
+
+#bazaar-debug-overlay tr:nth-child(odd) td {
+    background: #EBEBEB;
+}
+
+#bazaar-debug-overlay td {
+    background: #FFFFFF;
+}
+
+@keyframes bazaar-amedia-spinner {
+    0% {
+        opacity: 0.7;
+        box-shadow: 0px 0px 0px 0px #aeaaa6;
+    }
+    25% {
+        opacity: 1;
+        box-shadow: 0px 0px 0px 4px #aeaaa6;
+    }
+    50% {
+        opacity: 0.7;
+        box-shadow: 0px 0px 0px 0px #aeaaa6;
+    }
+    100% {
+        opacity: 0.6;
+        box-shadow: 0px 0px 0px 0px #aeaaa6;
+    }
+}
+
+.bazaar-parallax-label-x2::after {
+    display: none;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+    font-size: 12px;
+    font-family: FaktorTittel, sans-serif;
+    font-weight: 900;
+    color: #000000;
+    text-transform: uppercase;
+    display: block;
+    content: 'Annonse';
+    line-height: 15px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    z-index: 11;
+    line-height: 20px;
+}
+
+bazaar-amedia-spinner .dots,
+bazaar-amedia-spinner .dots::before,
+bazaar-amedia-spinner .dots::after {
+    background-color: #bbbbbb;
+    border-radius: 5px;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+}
+
+bazaar-amedia-spinner .dots {
+    animation: bazaar-amedia-spinner 1s linear .15s infinite;
+    position: relative;
+}
+
+
+bazaar-amedia-spinner .dots::before {
+    animation: bazaar-amedia-spinner 1s linear 0s infinite;
+    position: absolute;
+    left: -15px;
+    top: 0;
+}
+
+
+bazaar-amedia-spinner .dots::after {
+    animation: bazaar-amedia-spinner 1s linear .3s infinite;
+    position: absolute;
+    left: 15px;
+    top: 0;
+}
+
+bazaar-amedia-spinner .dots::before,
+bazaar-amedia-spinner .dots::after {
+    content: '';
+}
+
+.bazaarSpinnerContainer {
+    width: 100%;
+    text-align: center;
+}
+
+bazaar-ad[position="takeover"] {
+    transition: height 250ms ease-in-out, opacity 150ms ease-in-out;
+    opacity: 0;
+    height: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+bazaar-ad[position="takeover"].takeover-loaded {
+    height: 90vh;
+    max-height: calc(100vh - 70px);
+    opacity: 1;
+}
+
+bazaar-ad[position="takeover"].takeover-loaded > div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    clip: rect(0, 100vw, auto, 0);
+}
+
+bazaar-ad[position="takeover"].takeover-loaded iframe {
+    position: fixed;
+    height: 90vh;
+    max-height: calc(100vh - 70px);
+    width: 100%;
+}
+
+bazaar-ad[position="takeover"].takeover-loaded .takeover-close {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    bottom: auto;
+    z-index: 2;
+    font-size: 15px;
+    line-height: 20px;
+    transition: opacity 200ms;
+    padding: 3px 14px;
+    background-color: #FFCC14;
+    color: #000;
+    border-radius: 4px;
+    opacity: .9;
+    cursor: pointer;
+    height: auto !important;
+    font-family: FaktorTittel, 'Open Sans', sans-serif;
+}
+
+@media (max-width: 500px) {
+    bazaar-ad[position="takeover"].takeover-loaded iframe,
+    bazaar-ad[position="takeover"].takeover-loaded {
+        max-height: calc(100vh - 100px);
+    }
+
+    bazaar-ad[position="takeover"].takeover-loaded .takeover-close{
+        top: 10px;
+        right: 10px;
+        font-size: 16px;
+    }
+}
+
+bazaar-ad[position="takeover"].takeover-loaded .takeover-close:hover {
+    opacity: 1;
+}
+
+bazaar-ad[data-id^=chatbox-] {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 10000 !important;
+    -webkit-transition: opacity ease-in-out .2s;
+    -moz-transition: opacity ease-in-out .2s;
+    -ms-transition: opacity ease-in-out .2s;
+    -o-transition: opacity ease-in-out .2s;
+    transition: opacity ease-in-out .2s
+}
+
+.design-nettavisen .am-bazaar-ad--labeled.parallax::before {
+    display: none;
+}
+
+.preview-info {
+    text-align: center;
+    padding-top: 2px;
+    color: grey !important;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.advertise-link {
+    text-align: right;
+    padding-top: 10px;
+}
+
+.advertise-link-logo {
+    color: rgb(233, 89, 53);
+    font-family: 'Roboto',sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.advertise-link a {
+    text-decoration: none;
+    color: grey !important;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 14px;
+}
+
+.advertise-link a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+    .advertise-link {
+        text-align: center;
+        float: unset;
+        padding-top: 15px;
+    }
+
+}
+
+@media screen and (min-width: 533px) {
+    amedia-frontpage.wallpaper::before,
+    amedia-frontpage.wallpaper::after,
+    amedia-frontpage.horseshoe::before,
+    amedia-frontpage.horseshoe::after {
+      background: var(--page-color, #ffffff);
+      content: ' ';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 10px;
+    }
+    amedia-frontpage.wallpaper::before {
+      left: 100%;
+    }
+    amedia-frontpage.wallpaper::after {
+      right: 100%;
+    }
+    amedia-frontpage.horseshoe::before {
+      left: 100%;
+    }
+    amedia-frontpage.horseshoe::after {
+      right: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    amedia-frontpage.wallpaper::before,
+    amedia-frontpage.wallpaper::after,
+    amedia-frontpage.horseshoe::before,
+    amedia-frontpage.horseshoe::after {
+      width: 1vw;
+    }
+  }
+
+.parallax-iframe {
+    width: 100% !important;
+    height: 100% !important;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    background-color: var(--page-color);
+}

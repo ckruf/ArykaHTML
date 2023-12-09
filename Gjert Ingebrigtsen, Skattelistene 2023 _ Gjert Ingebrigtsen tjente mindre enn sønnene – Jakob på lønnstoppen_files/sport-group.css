@@ -1,0 +1,44 @@
+.optimus-background-custom-sport .promote-first {
+  gap: var(--brick-space-x3);
+}
+
+.optimus-background-custom-sport .wrap-horizontal {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--brick-space-x3);
+}
+.optimus-background-custom-sport .wrap-default {
+  display: grid;
+  grid-auto-flow: row;
+  gap: var(--brick-space-x2);
+}
+.optimus-background-custom-sport .carouselcontent {
+  height: 100%;
+}
+
+.optimus-background-custom-sport {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--brick-space-x3);
+  background-color: var(--brick-colors-supportiveSportBg);
+  color: var(--brick-colors-supportiveSportFg);
+  margin: 0 0 var(--brick-space-x1) 0;
+  padding: var(--brick-space-x3);
+}
+
+.optimus-complex-front.optimus-background-custom-sport header h2 {
+  background-color: var(--brick-colors-supportiveSportBg);
+  color: var(--brick-colors-supportiveSportFg);
+}
+
+@media screen and (min-width: 533px) {
+  .optimus-background-custom-sport .wrap-default {
+    grid-auto-flow: column;
+  }
+
+  .optimus-background-custom-sport {
+    padding-left: var(--brick-space-x2);
+    padding-right: var(--brick-space-x2);
+    margin: 0 0 var(--brick-space-x3) 0;
+  }
+}

@@ -1,0 +1,75 @@
+.breakpoint-980-above-or-equal-580 .vignette {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 532px) and (max-width: 1000px) {
+  .breakpoint-980-above-or-equal-580 .vignette {
+    font-size: 2vw;
+  }
+}
+
+.breakpoint-980-above-or-equal-580 .pretitle {
+  font-size: 22px;
+}
+
+@media screen and (min-width: 532px) and (max-width: 1000px) {
+  .breakpoint-980-above-or-equal-580 .pretitle {
+    font-size: 2.2vw;
+  }
+}
+
+.breakpoint-980-below-or-equal-480 .premium-logo {
+  height: 2vw;
+  width: 2vw;
+}
+
+.breakpoint-980-below-or-equal-480 .overlay {
+  height: 2vw;
+  width: 2vw;
+  margin: 0.5vw;
+}
+
+@media screen and (min-width: 1000px) {
+  .breakpoint-980-below-or-equal-480 .overlay {
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+  }
+  .breakpoint-980-below-or-equal-480 .premium-logo {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@media screen and (max-width: 532px) {
+  .breakpoint-500-242 .premium-logo {
+    height: 4.4vw;
+    width: 4.4vw;
+  }
+
+  .breakpoint-500-242 .overlay {
+    height: 4.4vw;
+    width: 4.4vw;
+    margin: 1vw;
+  }
+
+  .breakpoint-500-500-imageLeft .premium-logo {
+    height: 5vw;
+    width: 5vw;
+  }
+
+  .breakpoint-500-500-imageLeft .overlay {
+    height: 5vw;
+    width: 5vw;
+  }
+
+  .breakpoint-500-242 .pretitle {
+    font-size: 3.4vw;
+    line-height: 4vw;
+  }
+
+  .breakpoint-500-500-imageLeft .pretitle {
+    font-size: 4vw;
+    line-height: 4.8vw;
+  }
+}

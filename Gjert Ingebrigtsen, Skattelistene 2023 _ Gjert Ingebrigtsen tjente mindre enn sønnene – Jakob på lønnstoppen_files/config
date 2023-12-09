@@ -1,0 +1,9 @@
+(function(window) {
+    'use strict';
+    var naConfig = {
+        cacheBasePath: "https:\/\/r.acdn.no\/api\/amediacomments\/",
+        proxyApiBasePath: '/api/amediacomments/',
+        proxyFrontBasePath: '/api/amediacomments/'
+    };
+    window.naConfig = naConfig;
+})(window)

@@ -1,0 +1,151 @@
+/* Nettavisen dredition embed, both frontpage teaser and article  */
+
+/* Note: wrapper styling is for the anchor element */
+a.dredition-embed-wrapper {
+  color: #292827;
+  text-decoration: none;
+  font-family: FaktorTittel, sans-serif;
+  font-weight: 900;
+  display: block;
+  container-type: inline-size;
+}
+
+@container (width) {
+  .dredition-embed-pretitle {
+    font-size: clamp(0.875rem, 2cqw + 1rem, 1.25rem);
+    margin: 0.25rem 0;
+    color: #707070;
+  }
+  .dredition-embed-title {
+    font-size: clamp(1rem, 6cqw + 1rem, 3rem);
+    line-height: 1.05;
+    margin-top: 0;
+    word-wrap: break-word;
+  }
+}
+
+.dredition-embed-image {
+  width: 100%;
+}
+
+.dredition-embed-image-wrap {
+  position: relative;
+}
+
+.dredition-embed-image-wrap svg {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  height: 20px;
+  background-color: #120101;
+}
+
+.dredition-embed-image-wrap .commercial-label {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(255, 215, 0);
+  padding: 6px 6px;
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+  transition: opacity 0.3s ease-out;
+}
+
+/* commerical teaser */
+.amedia-article .commercial-teaser {
+  display: block;
+  text-decoration: none;
+}
+
+.amedia-article .commercial-teaser:hover {
+  text-decoration: underline;
+}
+
+.commercial-teaser article {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  font-family: var(--title-font);
+}
+
+.commercial-teaser:not(.has-image) div {
+  padding: 10px 20px;
+}
+
+.commercial-teaser figure {
+  width: 33%;
+  flex-shrink: 0;
+  margin: 0 10px 0 0;
+}
+
+.commercial-teaser figure img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.commercial-teaser span {
+  text-transform: uppercase;
+  display: block;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.nyheter .commercial-teaser span {
+  color: var(--news-brand-color-small-txt);
+}
+
+.sport .commercial-teaser span,
+.sportspill .commercial-teaser span {
+  color: var(--sport-brand-color-small-txt);
+}
+
+.okonomi .commercial-teaser span {
+  color: var(--economy-brand-color);
+}
+
+.livsstil .commercial-teaser span {
+  color: var(--livsstil-brand-color);
+}
+
+.commercial-teaser {
+  color: var(--swatchMono-black);
+  text-decoration: none;
+}
+
+.commercial-teaser h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding-top: 6px;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .commercial-teaser figure {
+    width: 150px;
+    margin-right: 5px;
+  }
+
+  .commercial-teaser h3 {
+    font-size: 1.1875rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .commercial-teaser h3 {
+    font-size: 1.0625rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .commercial-teaser figure {
+    width: 130px;
+  }
+
+  .commercial-teaser h3 {
+    font-size: 0.875rem;
+  }
+}

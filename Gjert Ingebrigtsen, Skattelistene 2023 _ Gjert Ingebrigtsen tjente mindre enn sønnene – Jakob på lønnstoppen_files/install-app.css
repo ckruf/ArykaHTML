@@ -1,0 +1,20 @@
+amedia-install-app .install-app-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f6f5f1;
+  height: 105px;
+  z-index: 1000;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+amedia-install-app .hide {
+  display: none;
+}
+amedia-install-app brick-button {
+  margin: 10px;
+}

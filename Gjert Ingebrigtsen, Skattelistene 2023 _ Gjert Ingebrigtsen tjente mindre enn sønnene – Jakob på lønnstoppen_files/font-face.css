@@ -1,0 +1,135 @@
+/* FaktorTittel */
+
+@font-face {
+  font-family: 'FaktorTittel';
+  src: url('https://assets.acdn.no/pkg/@amedia/brick-fonts/1.5.0/fonts/nettavisen/FaktorSansDisplay-Regular.woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'FaktorTittel';
+  src: url('https://assets.acdn.no/pkg/@amedia/brick-fonts/1.5.0/fonts/nettavisen/FaktorSansDisplay-Medium.woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'FaktorTittel';
+  src: url('https://assets.acdn.no/pkg/@amedia/brick-fonts/1.5.0/fonts/nettavisen/FaktorSansDisplay-Black.woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: auto;
+}
+
+/* FaktorSans */
+
+@font-face {
+  font-family: 'FaktorSans';
+  src: url('https://assets.acdn.no/pkg/@amedia/brick-fonts/1.5.0/fonts/nettavisen/FaktorSans-Regular.woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'FaktorSans';
+  src: url('https://assets.acdn.no/pkg/@amedia/brick-fonts/1.5.0/fonts/nettavisen/FaktorSans-Bold.woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'FaktorSans';
+  src: url('https://assets.acdn.no/pkg/@amedia/brick-fonts/1.5.0/fonts/nettavisen/FaktorSans-RegularItalic.woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: auto;
+}
+
+/* FaktorSerif */
+
+@font-face {
+  font-family: 'FaktorSerif';
+  src: url('https://assets.acdn.no/pkg/@amedia/brick-fonts/1.5.0/fonts/nettavisen/FaktorSerif-Regular.woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'FaktorSerif';
+  src: url('https://assets.acdn.no/pkg/@amedia/brick-fonts/1.5.0/fonts/nettavisen/FaktorSerif-RegularItalic.woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'FaktorSerif';
+  src: url('https://assets.acdn.no/pkg/@amedia/brick-fonts/1.5.0/fonts/nettavisen/FaktorSerif-Bold.woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'FaktorSerif';
+  src: url('https://assets.acdn.no/pkg/@amedia/brick-fonts/1.5.0/fonts/nettavisen/FaktorSerif-BoldItalic.woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: auto;
+}
+
+/* Open Sans */
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('https://assets.acdn.no/pkg/@amedia/brick-fonts/1.5.0/fonts/nettavisen/OpenSans300.woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('https://assets.acdn.no/pkg/@amedia/brick-fonts/1.5.0/fonts/nettavisen/OpenSans300Italic.woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('https://assets.acdn.no/pkg/@amedia/brick-fonts/1.5.0/fonts/nettavisen/OpenSans400.woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('https://assets.acdn.no/pkg/@amedia/brick-fonts/1.5.0/fonts/nettavisen/OpenSans400Italic.woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('https://assets.acdn.no/pkg/@amedia/brick-fonts/1.5.0/fonts/nettavisen/OpenSans700.woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('https://assets.acdn.no/pkg/@amedia/brick-fonts/1.5.0/fonts/nettavisen/OpenSans700Italic.woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: auto;
+}

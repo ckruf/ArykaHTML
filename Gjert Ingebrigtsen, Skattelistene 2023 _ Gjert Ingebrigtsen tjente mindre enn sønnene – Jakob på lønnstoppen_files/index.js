@@ -1,0 +1,1 @@
+import s from"./component.svelte.js";import m from"../lib/svelteElement.js";import r from"../lib/defineCustomElements.js";import p from"./text.js";const e="skatt",i="liste",t=`graff-${e}-egen-${i}`;export default class o extends m{constructor(){const n={projectName:e,componentName:t,version:"1.0.0",text:p};super({Component:s,options:n})}}r({[t]:o});

@@ -82,6 +82,10 @@ body {
     font-size: var(--phone-font-size);
 }
 
+p {
+    font-size: 1.5rem;
+}
+
 h1, h2, h3, h4 {
     line-height: 1.25;
     color: var(--clr-white);
@@ -236,4 +240,58 @@ header {
         display: flex;
         justify-content: space-around;
     }
+}
+
+/* 
+===============
+'We offer' section styles
+===============
+*/
+
+#offer-heading {
+    color: var(--clr-grey-10);
+}
+
+#offer-container {
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: var(--dark-shadow);
+    padding: 2rem;
+}
+
+#offer-image-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    width: 80%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+#offer-image {
+    border-radius: 1rem;
+    height: auto;
+    width: 100%;
+}
+
+#offer-bullets {
+    list-style-type: none;
+}
+
+#offer-bullets li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 25px;
+}
+
+#offer-bullets li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 16px;
 }

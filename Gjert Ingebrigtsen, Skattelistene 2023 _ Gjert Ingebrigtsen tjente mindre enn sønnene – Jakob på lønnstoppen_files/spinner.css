@@ -1,0 +1,77 @@
+@keyframes amedia-spinner {
+  0% {
+    opacity: 0.7;
+    box-shadow: 0px 0px 0px 0px var(--newspaper-color, #292827);
+  }
+  25% {
+    opacity: 1;
+    box-shadow: 0px 0px 0px 4px var(--newspaper-color, #292827);
+  }
+  50% {
+    opacity: 0.7;
+    box-shadow: 0px 0px 0px 0px var(--newspaper-color, #292827);
+  }
+  100% {
+    opacity: 0.6;
+    box-shadow: 0px 0px 0px 0px var(--newspaper-color, #292827);
+  }
+}
+
+amedia-spinner {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+}
+
+amedia-spinner > span {
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 10vw;
+}
+
+amedia-spinner img {
+  display: block;
+  width: 100%;
+}
+
+amedia-spinner .dots,
+amedia-spinner .dots::before,
+amedia-spinner .dots::after {
+  background-color: var(--newspaper-color, #292827);
+  border-radius: 5px;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+}
+
+amedia-spinner .dots {
+  animation: amedia-spinner 1s linear 0.15s infinite;
+  position: relative;
+}
+
+amedia-spinner .dots::before {
+  animation: amedia-spinner 1s linear 0s infinite;
+  position: absolute;
+  left: -15px;
+  top: 0;
+}
+
+amedia-spinner .dots::after {
+  animation: amedia-spinner 1s linear 0.3s infinite;
+  position: absolute;
+  left: 15px;
+  top: 0;
+}
+
+amedia-spinner .dots::before,
+amedia-spinner .dots::after {
+  content: '';
+}
