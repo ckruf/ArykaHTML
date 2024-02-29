@@ -66,10 +66,6 @@ body {
     border: 1px solid red;
 }
 
-.yellow-border {
-    border: 1px solid yellow;
-}
-
 .btn {
     cursor: pointer;
     border-radius: 2rem;
@@ -270,6 +266,10 @@ header {
     margin-bottom: 1rem;
 }
 
+#offer-text-container {
+    margin: 2rem;
+}
+
 #offer-image {
     border-radius: 1rem;
     height: auto;
@@ -294,4 +294,49 @@ header {
     left: 0;
     top: 0;
     font-size: 16px;
+}
+
+@media screen and (min-width: 800px) {
+    #offer-container {
+        flex-direction: row;
+    }
+    #offer-image-container {
+        width: 40%;
+    }
+}
+
+#ensure {
+    background: linear-gradient(
+        var(--clr-primary-transparent),
+        var(--clr-primary-transparent)
+    ),
+    url("./ensure.png");
+    display: grid;
+    grid-template-columns: 75%;
+    justify-content: center;
+
+}
+
+#ensure-intro p {
+    font-size: 1rem;
+}
+
+.ensure-item {
+    border: 1px solid red;
+    color: var(--clr-white);
+    padding: 2rem;
+}
+
+.ensure-item p {
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 800px) {
+    #ensure {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    #ensure-intro {
+        grid-row: 1/3;
+    }
 }
