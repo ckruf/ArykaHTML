@@ -25,6 +25,7 @@ Variables
     --clr-primary-10: hsl(204, 56%, 79%);
     /* primary color with transparency */
     --clr-primary-transparent: rgba(74, 154, 200, 0.5);
+    --clr-primary-transparent-2: rgba(74, 154, 200, 0.75);
     /* grey shades */
     --clr-grey-1: hsl(210, 36%, 96%);
     --clr-grey-2: hsl(212, 33%, 89%);

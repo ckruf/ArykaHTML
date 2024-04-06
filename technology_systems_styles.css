@@ -1,0 +1,86 @@
+/* 
+===============
+Header styles
+===============
+*/
+
+header {
+    height: 527px;
+    background: linear-gradient(
+        var(--clr-primary-transparent-2),
+        var(--clr-primary-transparent-2)
+    ),
+    url("./assets/header.png")
+    center/cover no-repeat;
+}
+
+#header-banner {
+    margin-top: 5rem;
+}
+
+#services-title {
+    max-width:  325px;
+    border: 1px solid red;
+}
+
+#services-heading {
+    font-size: 2rem;
+    color: var(--clr-grey-10);
+}
+
+/* 
+===============
+Card carousel styles
+===============
+*/
+
+
+
+.cards-container {
+    display: flex;
+    direction: row;
+
+}
+
+.card {
+    border-radius: 1rem;
+    box-shadow: var(--dark-shadow);
+    width: 500px;
+    height: 475px;
+}
+
+.card h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+#EZS-card {
+    background: url("./assets/ezs.png") center/cover no-repeat;
+}
+
+#EPS-card {
+    background: url("./assets/eps.png") center/cover no-repeat;
+}
+
+#CCTV-card {
+    background: url("./assets/cctv.png") center/cover no-repeat;
+}
+
+#ACS-card {
+    background: url("./assets/acs.jpg") center/cover no-repeat;
+}
+
+#EVAC-card {
+    background: url("./assets/evac.png") center/cover no-repeat;
+}
