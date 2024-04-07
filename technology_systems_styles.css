@@ -5,7 +5,7 @@ Header styles
 */
 
 header {
-    height: 527px;
+    height: 200px;
     background: linear-gradient(
         var(--clr-primary-transparent-2),
         var(--clr-primary-transparent-2)
@@ -24,6 +24,9 @@ Services style
 ===============
 */
 
+#services {
+    padding: 2rem 0;
+}
 
 #services-title {
     max-width:  325px;
@@ -32,6 +35,7 @@ Services style
 #services-heading {
     font-size: 2rem;
     color: var(--clr-grey-10);
+    margin-bottom: 2rem;
 }
 
 
@@ -54,6 +58,8 @@ Card carousel styles
     scroll-behavior: smooth;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .cards-container::-webkit-scrollbar {
@@ -67,6 +73,19 @@ Card carousel styles
     scroll-snap-align: start;
     margin-right: 24px;
     height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-heading-container {
+    padding: 1rem;
+}
+
+.card-link-container {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
 }
 
 .card h1 {
@@ -75,13 +94,21 @@ Card carousel styles
 }
 
 .card-link {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 100%;
-    width: 100%;
+    cursor: pointer;
+    border-radius: 2rem;
+    font-family: var(--ff-btn);
+    padding: 0.75rem 2.5rem;
+    border: 1px solid var(--clr-white);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    color: var(--clr-white);
+    font-weight: bold;
+    font-size: var(--phone-font-size);
     text-decoration: none;
-    color: inherit;
+}
+
+.card-link:hover {
+    background: var(--clr-white);
+    color: var(--clr-primary-5)
 }
 
 @media (min-width: 768px) {
@@ -102,6 +129,8 @@ Card carousel styles
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
+    background: var(--clr-primary-5);
+    padding: 0.5rem 1.5rem;
 }
 
 #scroll-left {
@@ -114,21 +143,72 @@ Card carousel styles
 
 
 #EZS-card {
-    background: url("./assets/ezs.png") center/cover no-repeat;
+    background:
+    var(--dark-overlay),
+    url("./assets/ezs.png")
+    center/cover no-repeat;
 }
 
 #EPS-card {
-    background: url("./assets/eps.png") center/cover no-repeat;
+    background:
+    var(--dark-overlay),
+    url("./assets/eps.png")
+    center/cover no-repeat;
 }
 
 #CCTV-card {
-    background: url("./assets/cctv.png") center/cover no-repeat;
+    background:
+    var(--dark-overlay),
+    url("./assets/cctv.png")
+    center/cover no-repeat;
 }
 
-#ACS-card {
-    background: url("./assets/acs.jpg") center/cover no-repeat;
+#ACC-card {
+    background:
+    var(--dark-overlay),
+    url("./assets/acc.jpg")
+    center/cover no-repeat;
 }
 
 #EVAC-card {
-    background: url("./assets/evac.png") center/cover no-repeat;
+    background:
+    var(--dark-overlay),
+    url("./assets/evac.png")
+    center/cover no-repeat;
 }
+
+#FYZ-card {
+    background:
+    var(--dark-overlay),
+    url("./assets/physical.png")
+    center/cover no-repeat;
+}
+
+#PERIM-card {
+    background:
+    var(--dark-overlay),
+    url("./assets/perimeter.png")
+    center/cover no-repeat;
+}
+
+#KABEL-card {
+    background:
+    var(--dark-overlay),
+    url("./assets/superstructure.png")
+    center/cover no-repeat;
+}
+
+#SYSTEM-card {
+    background:
+    var(--dark-overlay),
+    url("./assets/ezs.png")
+    center/cover no-repeat;
+}
+
+#PLATE-card {
+    background:
+    var(--dark-overlay),
+    url("./assets/plate_recognition.png")
+    center/cover no-repeat;
+}
+

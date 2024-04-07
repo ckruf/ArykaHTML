@@ -47,6 +47,7 @@ Variables
     --desktop-font-size: 1rem;
     --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --dark-overlay: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   }
   
 
