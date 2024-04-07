@@ -18,15 +18,22 @@ header {
     margin-top: 5rem;
 }
 
+/* 
+===============
+Services style
+===============
+*/
+
+
 #services-title {
     max-width:  325px;
-    border: 1px solid red;
 }
 
 #services-heading {
     font-size: 2rem;
     color: var(--clr-grey-10);
 }
+
 
 /* 
 ===============
@@ -35,18 +42,31 @@ Card carousel styles
 */
 
 
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
 
 .cards-container {
     display: flex;
-    direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 
+.cards-container::-webkit-scrollbar {
+    display: none;
 }
 
 .card {
     border-radius: 1rem;
     box-shadow: var(--dark-shadow);
-    width: 500px;
-    height: 475px;
+    flex: 0 0 calc(100% - 48px);
+    scroll-snap-align: start;
+    margin-right: 24px;
+    height: 400px;
 }
 
 .card h1 {
@@ -62,6 +82,34 @@ Card carousel styles
     width: 100%;
     text-decoration: none;
     color: inherit;
+}
+
+@media (min-width: 768px) {
+    .card {
+        flex-basis: calc(50% - 36px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .card {
+        flex-basis: calc(33.333% - 32px);
+    }
+}
+
+#scroll-left,
+#scroll-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+#scroll-left {
+    left: 0;
+}
+
+#scroll-right {
+    right: 0;
 }
 
 
