@@ -47,7 +47,7 @@ Variables
     --desktop-font-size: 1rem;
     --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    --dark-overlay: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    --dark-overlay: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   }
   
 
@@ -185,6 +185,62 @@ Nav styles
 @media screen and (min-width: 800px) {
     #nav-phone {
         display: inline;
+    }
+}
+
+.nav-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: var(--clr-white);
+    box-shadow: var(--dark-shadow);
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+    padding: 2rem;
+}
+
+.nav-menu.show {
+    right: 0;
+}
+
+.nav-menu-items {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+.nav-menu-items li {
+    margin-bottom: 1.5rem;
+}
+
+.nav-menu-items a {
+    color: var(--clr-grey-10);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav-menu-items a:hover {
+    text-decoration: underline;
+}
+
+#nav-close {
+    background: transparent;
+    border: none;
+    color: var(--clr-grey-10);
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width: 799px) {
+    .nav-menu {
+        width: 100%;
+        right: -100%;
     }
 }
 

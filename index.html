@@ -9,13 +9,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&family=Space+Grotesk&family=Poppins" />
     <link rel="stylesheet" href="./common_styles.css" />
     <link rel="stylesheet" href="./index_styles.css" />
+    <script src="./common.js"></script>
 </head>
 <body>
     <header>
         <nav>
             <div id="nav-center">
                 <div id="nav-logo-container">
-                    <img id="nav-logo" src="./assets/logo.png"/>
+                    <a href="./index.html">
+                        <img id="nav-logo" src="./assets/logo.png"/>
+                    </a>
                 </div>
                 <div id="nav-buttons">
                     <button type="button" id="nav-phone" class="btn">
@@ -27,11 +30,27 @@
                     </button>
                 </div>
             </div>
+
+            <div id="nav-menu" class="nav-menu">
+                <button type="button" id="nav-close" class="btn">
+                    <i class="fa-solid fa-times"></i>
+                </button>
+                <ul class="nav-menu-items">
+                    <li><a href="./index.html">Domů</a></li>
+                    <li><a href="#">O nás</a></li>
+                    <li><a href="#">Nabízíme</a></li>
+                    <li><a href="./technology_and_systems.html">Technologie a systémy</a></li>
+                    <li><a href="#">Reference</a></li>
+                    <li><a href="#">Další aktivity</a></li>
+                    <li><a href="#">Partneři</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </div>
         </nav>
 
         <div id="hero-banner">
             <div class="section-center">
-                <h1 id="main-heading">Váš svět v bezpečí, <br> S námi je to snadné.</h1>
+                <h1 id="main-heading">Váš svět v bezpečí. <br> S námi je to snadné.</h1>
                 <h2>Ušetřete čas, vyhněte se potížím, a rozvíjejte svůj byznys s Arykou</h2>
                 <button class="btn" id="banner-btn">
                     Více
