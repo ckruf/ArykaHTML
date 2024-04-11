@@ -1,26 +1,5 @@
 /* 
 ===============
-Header styles
-===============
-*/
-
-header {
-    height: 200px;
-    background: linear-gradient(
-        var(--clr-primary-transparent-2),
-        var(--clr-primary-transparent-2)
-    ),
-    url("./assets/header.png")
-    center/cover no-repeat;
-    padding: 1rem;
-}
-
-#header-banner {
-    margin-top: 2rem;
-}
-
-/* 
-===============
 About section styles
 ===============
 */
