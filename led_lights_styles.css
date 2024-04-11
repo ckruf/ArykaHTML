@@ -1,0 +1,78 @@
+/* 
+===============
+LED Tubes section styles
+===============
+*/
+
+
+.led-tubes-content {
+    background-color: var(--clr-white);
+    border-radius: var(--radius);
+    box-shadow: var(--light-shadow);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.led-tubes-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: var(--clr-grey-8);
+}
+
+.led-tubes-content ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.led-tubes-content li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--clr-grey-8);
+}
+
+.contact-person-info {
+    background-color: var(--clr-primary-5);
+    border-radius: var(--radius);
+    box-shadow: var(--light-shadow);
+    padding: 2rem;
+    color: var(--clr-white);
+}
+
+.contact-person-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.contact-person-info a {
+    color: var(--clr-white);
+}
+
+.contact-person {
+    margin-top: 2rem;
+}
+
+.contact-person h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-person p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.led-tubes-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.led-tubes-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    box-shadow: var(--light-shadow);
+}

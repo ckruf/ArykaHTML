@@ -1,0 +1,92 @@
+/* 
+===============
+Land Sale section styles
+===============
+*/
+
+.land-sale-container {
+    padding: 2rem 0;
+}
+
+.land-sale-intro {
+    margin-bottom: 2rem;
+}
+
+.land-sale-intro p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--clr-grey-8);
+}
+
+.land-sale-details h2 {
+    font-size: 2rem;
+    color: var(--clr-primary-5);
+    margin-bottom: 1.5rem;
+}
+
+.land-sale-details h3 {
+    font-size: 1.5rem;
+    color: var(--clr-grey-10);
+    margin-bottom: 1rem;
+}
+
+.land-sale-details p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: var(--clr-grey-8);
+}
+
+.map-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.map-container a {
+    display: block;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: var(--clr-primary-5);
+}
+
+.land-sale-details ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.land-sale-details li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--clr-grey-8);
+}
+
+#katastr-link {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    box-shadow: var(--light-shadow);
+}
