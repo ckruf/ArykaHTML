@@ -1,0 +1,32 @@
+/* 
+===============
+Header styles
+===============
+*/
+
+header {
+    background: linear-gradient(
+        var(--clr-primary-transparent-2),
+        var(--clr-primary-transparent-2)
+    ),
+    url("./assets/ezs.png")
+    center/cover no-repeat;
+    padding: 1rem;
+}
+
+#header-banner {
+    margin-top: 2rem;
+}
+
+/* 
+===============
+EZS description styles
+===============
+*/
+
+#ezs-description p {
+    font-size: 1.2rem;
+    color: var(--clr-grey-8);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}

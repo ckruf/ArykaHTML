@@ -1,0 +1,60 @@
+/* 
+===============
+Header styles
+===============
+*/
+
+header {
+    height: 200px;
+    background: linear-gradient(
+        var(--clr-primary-transparent-2),
+        var(--clr-primary-transparent-2)
+    ),
+    url("./assets/header.png")
+    center/cover no-repeat;
+    padding: 1rem;
+}
+
+#header-banner {
+    margin-top: 2rem;
+}
+
+/* 
+===============
+Reference section styles
+===============
+*/
+
+.reference-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.reference-box {
+    background-color: var(--clr-white);
+    border-radius: var(--radius);
+    box-shadow: var(--light-shadow);
+    padding: 2rem;
+    text-align: center;
+}
+
+.reference-box i {
+    color: var(--clr-primary-5);
+    margin-bottom: 1rem;
+}
+
+.reference-box h3 {
+    color: var(--clr-grey-10);
+    font-size: 1.25rem;
+}
+
+.reference-link {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Inherits text color from parent instead of default link color */
+}
+
+.reference-link:hover {
+    text-decoration: underline;
+}
+

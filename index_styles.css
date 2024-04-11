@@ -12,6 +12,7 @@ header {
     ),
     url("./assets/hero.png")
     center/cover no-repeat;
+    padding: 1rem;
 }
 
 #hero-banner {
