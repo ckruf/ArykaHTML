@@ -1,0 +1,60 @@
+/* 
+===============
+Header styles
+===============
+*/
+
+header {
+    height: 200px;
+    background: linear-gradient(
+        var(--clr-primary-transparent-2),
+        var(--clr-primary-transparent-2)
+    ),
+    url("./assets/header.png")
+    center/cover no-repeat;
+    padding: 1rem;
+}
+
+#header-banner {
+    margin-top: 2rem;
+}
+
+/* 
+===============
+Offer section styles
+===============
+*/
+
+.offer-container {
+    padding: 2rem 0;
+}
+
+.offer-intro {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--clr-grey-10);
+}
+
+.offer-item {
+    margin-bottom: 3rem;
+}
+
+.offer-item h2 {
+    font-size: 1.8rem;
+    color: var(--clr-primary-5);
+    margin-bottom: 1rem;
+}
+
+.offer-item ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+}
+
+.offer-item li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: var(--clr-grey-8);
+}
