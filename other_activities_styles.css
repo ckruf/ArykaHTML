@@ -1,0 +1,57 @@
+/* 
+===============
+Activities section styles
+===============
+*/
+
+
+.activities-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.activity-item {
+    background-color: var(--clr-white);
+    border-radius: var(--radius);
+    box-shadow: var(--light-shadow);
+    overflow: hidden;
+}
+
+.activity-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.activity-content {
+    padding: 2rem;
+}
+
+.activity-content h2 {
+    font-size: 1.8rem;
+    color: var(--clr-primary-5);
+    margin-bottom: 1rem;
+}
+
+.activity-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: var(--clr-grey-8);
+}
+
+.activity-btn-container {
+    text-align: center
+}
+
+.activity-btn {
+    background-color: var(--clr-primary-5);
+    color: var(--clr-white);
+    text-decoration: none;
+}
+
+.activity-btn:hover {
+    background-color: var(--clr-primary-7);
+}
