@@ -1,0 +1,44 @@
+/* login_styles.css */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--clr-primary-7);
+}
+
+.login-form {
+    background: var(--clr-white);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--dark-shadow);
+    width: 100%;
+    max-width: 400px;
+}
+
+.input-container {
+    margin-bottom: 1.5rem;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--clr-grey-3);
+    border-radius: var(--radius);
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button-container button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    background: var(--clr-primary-5);
+}
